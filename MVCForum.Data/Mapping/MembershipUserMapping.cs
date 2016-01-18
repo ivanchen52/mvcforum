@@ -49,6 +49,10 @@ namespace MVCForum.Data.Mapping
             Property(x => x.TwitterId).IsOptional().HasMaxLength(150);
             Property(x => x.GoogleAccessToken).IsOptional().HasMaxLength(300);
             Property(x => x.GoogleId).IsOptional().HasMaxLength(150);
+
+            Property(x => x.XqAccessToken).IsOptional().HasMaxLength(300);
+            Property(x => x.XqId).IsOptional().HasMaxLength(150);
+
             Property(x => x.IsExternalAccount).IsOptional();
             Property(x => x.TwitterShowFeed).IsOptional();
             Property(x => x.DisableEmailNotifications).IsOptional();

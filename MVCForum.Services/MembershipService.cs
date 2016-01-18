@@ -415,6 +415,11 @@ namespace MVCForum.Services
             return _membershipRepository.GetUserByGoogleId(googleId);
         }
 
+        public MembershipUser GetUserByXqId(string xqId)
+        {
+            return _membershipRepository.GetUserByXqId(xqId);
+        }
+
         /// <summary>
         /// Get users by openid token
         /// </summary>

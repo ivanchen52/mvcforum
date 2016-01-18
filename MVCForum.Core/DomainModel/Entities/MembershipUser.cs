@@ -67,6 +67,8 @@ namespace MVCForum.Domain.DomainModel
         public string TwitterId { get; set; }
         public string GoogleAccessToken { get; set; }
         public string GoogleId { get; set; }
+        public string XqAccessToken { get; set; }
+        public string XqId { get; set; }
         public string MicrosoftAccessToken { get; set; }
         public string MicrosoftId { get; set; }
         public bool? IsExternalAccount { get; set; }

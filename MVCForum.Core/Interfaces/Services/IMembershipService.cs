@@ -28,6 +28,7 @@ namespace MVCForum.Domain.Interfaces.Services
         MembershipUser GetUserByFacebookId(long facebookId);
         MembershipUser GetUserByTwitterId(string twitterId);
         MembershipUser GetUserByGoogleId(string googleId);
+        MembershipUser GetUserByXqId(string xqId);
         MembershipUser GetUserByOpenIdToken(string openId);
         IList<MembershipUser> GetUsersById(List<Guid> guids);
         IList<MembershipUser> GetUsersByDaysPostsPoints(int amoutOfDaysSinceRegistered, int amoutOfPosts);

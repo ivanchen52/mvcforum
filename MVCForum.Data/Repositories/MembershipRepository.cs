@@ -69,6 +69,13 @@ namespace MVCForum.Data.Repositories
                 .Include(x => x.Roles)
                 .FirstOrDefault(name => name.GoogleAccessToken == googleId);
         }
+        //TODO:需找出取得XQID的方法
+        public MembershipUser GetUserByXqId(string xqId)
+        {
+            return _context.MembershipUser
+                .Include(x => x.Roles)
+                .FirstOrDefault(name => name.XqAccessToken == xqId);
+        }
 
         public MembershipUser GetUserByOpenIdToken(string openId)
         {
